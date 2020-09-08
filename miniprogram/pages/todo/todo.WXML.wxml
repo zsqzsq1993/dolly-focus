@@ -1,0 +1,3 @@
+    <mp-dialog title="test" show="true">
+        <view>test content</view>
+    </mp-dialog>
