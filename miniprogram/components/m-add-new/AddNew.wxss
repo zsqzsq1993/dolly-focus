@@ -55,7 +55,7 @@
 }
 
 .counter-mode.active {
-  color: var(--dark-background-color-l);
+  color: var(--dark-theme-color);
 }
 
 .slider {

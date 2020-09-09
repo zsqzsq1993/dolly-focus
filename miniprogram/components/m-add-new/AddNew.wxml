@@ -3,21 +3,21 @@
     <view class="add-new-header">
       <icon type="clear" catchtap="hide" class="clear-icon"></icon>
       <text class="add-new-title">添加待办</text>
-      <text class="add-new-confirm">确定</text>
+      <text class="add-new-confirm" catchtap="confirm">确定</text>
     </view>
     <view class="add-new-content">
       <input class="add-new-input" placeholder="请输入事项名称"></input>
-      <view class="counter-modes">
-        <text class="counter-mode" wx:class="">倒计时</text>
-        <text class="counter-mode">正计时</text>
+      <view class="counter-modes" bindtap="handleCounterChange">
+        <text class="counter-mode {{modeIndex == 0 ? 'active' : ''}}" data-index="0">倒计时</text>
+        <text class="counter-mode {{modeIndex == 1 ? 'active' : ''}}" data-index="1">正计时</text>
       </view>
       <slider 
-      class="slider" 
       min="5" 
       max="180"
-      value="25" 
-      activeColor="#ffcd32"
-      block-color="#ffcd32"
+      value="25"
+      disabled="{{slider.disabled}}" 
+      activeColor="{{slider.color}}"
+      block-color="{{slider.color}}"
       block-size="18"
       show-value="true"></slider>
     </view>
