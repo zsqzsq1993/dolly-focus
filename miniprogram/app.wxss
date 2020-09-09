@@ -22,10 +22,33 @@ button::after{
 
 
 page {
-  background: #f6f6f6;
+  background: var(--dark-background-color); /* #f6f6f6 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  /* light theme */
+  --theme-color: #4fc08d;
+  --text-color-white: #fff;
+  --text-color-white-l: rgba(255, 255, 255, 0.3);
+  --text-color-white-ll:  rgba(255, 255, 255, 0.5);
+  --text-color-white-lll:  rgba(255, 255, 255, 0.8);
+
+  /* dark theme */
+  --dark-theme-color: #ffcd32;
+  --dark-theme-color-l: rgba(255, 205, 49, 0.5);  
+  --dark-sub-theme-color: #d93f30;
+  --dark-background-color: #222;
+  --dark-background-color-l: rgba(0, 0, 0, 0.3);
+  --dark-dialog-background: #666;
+
+  /* font size */
+  --font-size-small-s: 10px;
+  --font-size-small: 12px;
+  --font-size-media: 14px;
+  --font-size-media-x: 16px;
+  --font-size-large: 18px;
+  --font-size-large-x: 20px;
 }
 
 .userinfo, .uploader, .tunnel {

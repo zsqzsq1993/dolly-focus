@@ -1,20 +1,47 @@
 {
   "pages": [
-    "pages/todo/todo.WXML",
-    "pages/todolist/todolist.WXML",
-    "pages/data/data.WXML",
-    "pages/profile/profile.WXML"
+    "pages/todo/todo",
+    "pages/todolist/todolist",
+    "pages/data/data",
+    "pages/profile/profile"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#ffcd32",
+    "navigationBarTitleText": "Dolly Focus",
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "useExtendedLib": {
     "weui": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/todo/todo",
+      "text": "待办",
+      "iconPath": "images/todo.png",
+      "selectedIconPath": "images/todo_active.png"
+    }, {
+      "pagePath": "pages/todolist/todolist",
+      "text": "待办集",
+      "iconPath": "images/todolist.png",
+      "selectedIconPath": "images/todolist_active.png"
+    }, {
+      "pagePath": "pages/data/data",
+      "text": "数据",
+      "iconPath": "images/data.png",
+      "selectedIconPath": "images/data_active.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "images/profile.png",
+      "selectedIconPath": "images/profile_active.png"
+    }],
+    "backgroundColor": "#333",
+    "borderStyle": "black",
+    "color": "#fff",
+    "selectedColor": "#ffcd32"
   }
 }

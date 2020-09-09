@@ -1,0 +1,10 @@
+.add-button-wrapper {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  padding: 8px 15px;
+  color: var(--dark-theme-color);
+  border: 1px solid var(--dark-theme-color);
+  border-radius: 8px;
+}

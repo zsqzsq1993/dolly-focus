@@ -1,4 +1,4 @@
-// pages/profile/profile.WXML.js
+// pages/todolist/todolist.js
 Page({
 
   /**

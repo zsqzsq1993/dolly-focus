@@ -1,4 +1,4 @@
-// pages/data/data.WXML.js
+// pages/data/data.js
 Page({
 
   /**
