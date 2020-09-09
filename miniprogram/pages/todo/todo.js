@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+
+  addNewTodo() {
+    const addNew = this.selectComponent('.custom-add-new').show()
   }
 })

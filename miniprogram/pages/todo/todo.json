@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "custom-add-new": "/components/m-add-new/AddNew"
+  },
   "navigationBarTitleText": "Dolly Focus - Todo"
 }
