@@ -6,15 +6,21 @@
       <text class="add-new-confirm" catchtap="confirm">确定</text>
     </view>
     <view class="add-new-content">
-      <input class="add-new-input" placeholder="请输入事项名称"></input>
+      <input
+      class="add-new-input {{ inputWarnFlag ? 'warn' : '' }}"
+      placeholder="请输入事项名称"
+      value="{{ todoName }}" 
+      bindfocus="focusInput"
+      bindinput="whenInputChange"></input>
       <view class="counter-modes" bindtap="handleCounterChange">
-        <text class="counter-mode {{modeIndex == 0 ? 'active' : ''}}" data-index="0">倒计时</text>
-        <text class="counter-mode {{modeIndex == 1 ? 'active' : ''}}" data-index="1">正计时</text>
+        <text class="counter-mode {{modeIndex === 'COUNT_DOWN' ? 'active' : ''}}" data-index="COUNT_DOWN">倒计时</text>
+        <text class="counter-mode {{modeIndex === 'COUNT_UP' ? 'active' : ''}}" data-index="COUNT_UP">正计时</text>
       </view>
       <slider 
-      min="5" 
-      max="180"
-      value="25"
+      min="{{ slider.min }}" 
+      max="{{ slider.max }}"
+      value="{{ slider.value }}"
+      bindchange="handleSliderChange"
       disabled="{{slider.disabled}}" 
       activeColor="{{slider.color}}"
       block-color="{{slider.color}}"
