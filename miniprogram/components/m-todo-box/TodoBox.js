@@ -4,7 +4,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    todo: {
+      type: Object
+    }
   },
 
   /**
@@ -18,6 +20,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    countMode () {
+      const {mode, time} = this.properties.todo
+      return mode === 'COUNT_DOWN'
+        ? time
+        : '正计时'
+    }
   }
 })

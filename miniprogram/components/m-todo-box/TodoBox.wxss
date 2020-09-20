@@ -1,1 +1,19 @@
-/* components/m-todo-box/TodoBox.wxss */
+.m-todo-box {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.information-wrapper {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.start-wrapper {
+  flex: 1;
+  text-align: right;
+}

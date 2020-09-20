@@ -1,0 +1,9 @@
+<view class="m-todo-box">
+  <view class="infomation-wrapper">
+    <text class="todo-name">{{ todo.name }}</text>
+    <text class="count-mode">{{ countMode }}</text>
+  </view>
+  <view class="start-wrapper">
+    开始
+  </view>
+</view>
